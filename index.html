@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/224a830863.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body class="my-5">
+    
+    <main>
+        <!-- Project title  -->
+        <header class="text-center fw-bolder mb-5">
+            <h1>AI Universe Hub</h1>
+            <button onclick="" id="btn-sort" class="btn btn-danger">Sort by Date</button>
+        </header>
+        <!-- All section container -->
+
+        <section id="main-container" class="container">
+            <div id="all-cards" class="row row-cols-1 row-cols-md-3 g-4">
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Modal Release  -->
+    <section>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="text-end rounded-circle position-relative">
+                  <button type="button" class="btn-close bg-danger-subtle position-absulate top-0 end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row row-cols-1 row-cols-md-2 g-4" id="modal-body">
+                        <div  class="col border rounded-2 left-column pt-4">
+                          <!-- Column 1  -->
+                          <h4 id="modal-left-description">ChatGPT is an AI-powered chatbot platform that uses OpenAI's GPT technology to simulate human conversation.</h4>
+                            <div class="grid row row-cols-1 row-cols-md-3 text-center mt-5 justify-content-between p-3">
+                              <div class="text-success fw-bold bg-light w-25 py-3"><span id="basic-price"> $10/
+                              <br>  month </span>
+                              <br>
+                              <span id="basic-plan">
+                                Basic </span></div>
+                              <div class="fw-bold bg-light w-25 py-3" style="color:#F28927;
+                              ;
+                              ;"><span id="pro-price"> $50/
+                              <br> month </span>
+                              <br> <span id="pro-plan">Pro</span></div>
+                              <div class="fw-bold bg-light w-25 py-3" style="color:#EB5757;"> <span id="contact-price"> Contact 
+                              <br>  us </span>
+                              <br> <span id="contact-plan">Enterprise</span></div>
+                            </div>
+                            <div class="grid row row-cols-1 row-cols-md-2">
+                              <div class="col">
+                                <h4 class="fw-bold text-center mb-3">Features</h4>
+                                <div id="feature-container"></div>
+                              </div>
+                              <div class="col">
+                                <h4 class="fw-bold text-center mb-3">Intrigations</h4>
+                                <div id="intigrations-container">
+
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                          <!-- Column 2  -->
+                          <div class="position-relative">
+                          <img src="" alt="" id="image" class="img-fluid px-4 py-2">
+                          <span class="badge text-bg-danger position-absolute top-0 end-0 d-none" id="accuracy">Danger</span>
+                        </div>
+                          <div class="question-answer">
+                            <h4 id="question" class="text-center"></h4>
+                            <p id="answer" class="text-center"></p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Show-all" class="my-5 d-none">
+        <div class="container text-center">
+            <button id="btn-show-all" class="btn btn-danger">Show all</button>
+        </div>
+    </section>
+
+    <!-- Loader  -->
+    <section id="loader" class="mt-5 d-none">
+        <div style="height: 300px;" class="d-flex justify-content-center align-items-center">
+            <div class="spinner-border text-success" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+    </section>
+    <!-- Modal container  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap JS file  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./JS/ai_universe_hub.js"></script>
+  </body>
+</html>

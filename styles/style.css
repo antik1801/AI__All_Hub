@@ -1,0 +1,22 @@
+.modal-card{
+    border: 1px solid #EB5757;
+    border-radius: 10px;
+    background-color: rgba(235, 87, 87, 0.07);
+}
+#modal-card-price p{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.modal-card-p1{
+    color: #03A30A;
+}
+.modal-card-p2{
+    color: #F28927;
+}
+.modal-card-p3{
+    color: #EB5757;
+}
+.left-column{
+    background-color: rgba(235, 87, 87, 0.07);
+}
